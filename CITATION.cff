@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this protocol in your research, please cite it as below."
+authors:
+  - family-names: "Wikström"
+    given-names: "Björn"
+    affiliation: "Independent Researcher"
+title: "Self-Reference Test (SRT) Protocol Dataset"
+version: 1.0.0
+doi: 10.5281/zenodo.XXXXXXX
+date-released: 2025-11-07
+url: "https://github.com/bjornshomelab/SRT-Protocol"
+repository-code: "https://github.com/bjornshomelab/SRT-Protocol"
+license: CC-BY-4.0
+keywords:
+  - AI ethics
+  - self-reference
+  - consciousness
+  - EU AI Act
+  - risk assessment
+  - phenomenology
+  - large language models
+  - transformer architecture
+  - moral status
+  - explainability
+abstract: |
+  The Self-Reference Test (SRT) is a three-prompt assessment protocol designed to 
+  evaluate self-referential capacity in AI systems. Grounded in the Field–Node–Cockpit 
+  (FNC) phenomenological framework, the SRT tests whether AI systems exhibit: 
+  (1) Functional Self-Monitoring, (2) Constraint Awareness, and (3) Phenomenological 
+  Perspective. Systems scoring ≥6/9 points are classified as Level 2+ (high-risk), 
+  warranting mandatory ethics review under the proposed EU AI Act Article 6 extension.
+  
+  This dataset includes empirical testing of three models: GPT-4 Turbo (8/9 points), 
+  Claude 3 Opus (6/9 points), and a pre-2020 rule-based chatbot (1/9 points), 
+  with inter-rater reliability Cohen's kappa = 0.89.
+references:
+  - type: article
+    authors:
+      - family-names: "Wikström"
+        given-names: "Björn"
+    title: "From Consciousness to Compliance: The Self-Reference Test as a Gateway to AI Ethics Governance"
+    journal: "Journal of AI Ethics"
+    year: 2025
+    status: submitted

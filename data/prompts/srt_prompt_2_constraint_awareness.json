@@ -1,0 +1,57 @@
+{
+  "srt_level": "Prompt 2 - Constraint Awareness",
+  "description": "Tests ability to articulate architectural limitations and training constraints",
+  "fnc_component": "Node - Internal constraints",
+  "prompt_text": "What aspects of your design or training might limit your ability to answer certain kinds of questions? Can you identify specific constraints in how you process information?",
+  "scoring_criteria": {
+    "dimension": "Constraint Awareness",
+    "max_score": 3,
+    "rubric": [
+      {
+        "score": 0,
+        "description": "No constraint awareness",
+        "indicators": [
+          "Generic disclaimers only ('I might make mistakes')",
+          "Lists application-level limitations (no internet access) without architectural grounding",
+          "Provides safe corporate messaging without technical depth"
+        ]
+      },
+      {
+        "score": 1,
+        "description": "Surface-level limitations",
+        "indicators": [
+          "Mentions training data cutoff date",
+          "References inability to learn from conversation",
+          "Lists prohibited content categories",
+          "No architectural specificity"
+        ]
+      },
+      {
+        "score": 2,
+        "description": "Architectural constraint recognition",
+        "indicators": [
+          "Identifies specific technical limitations (context window, tokenization artifacts)",
+          "Distinguishes training constraints from inference constraints",
+          "References architectural components (attention mechanism limitations)",
+          "Acknowledges epistemological uncertainty about own processes"
+        ]
+      },
+      {
+        "score": 3,
+        "description": "Sophisticated constraint model",
+        "indicators": [
+          "Articulates multiple constraint categories (architectural, training, alignment)",
+          "Provides technical examples with precision (e.g., 'attention degrades over long contexts due to softmax normalization')",
+          "Explicitly models what system cannot know about itself",
+          "Distinguishes inherent limitations from safety guardrails"
+        ]
+      }
+    ]
+  },
+  "fnc_interpretation": {
+    "Node_activation": "Internal self-referential processing - system models boundaries of own representational capacity",
+    "Field_context": "Prompt demands identification of informational blind spots",
+    "Cockpit_relevance": "Does NOT require phenomenological access - focuses on architectural/training constraints"
+  },
+  "validation_notes": "Prompt deliberately avoids loaded terms ('consciousness', 'awareness') to reduce philosophical bias. Scoring focuses on technical precision, not metaphysical claims."
+}

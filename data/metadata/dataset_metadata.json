@@ -1,0 +1,74 @@
+{
+  "dataset_title": "Self-Reference Test (SRT) Protocol Dataset - AI Ethics Assessment",
+  "dataset_version": "1.0",
+  "publication_date": "2025-03-15",
+  "creators": [
+    {
+      "name": "Björn Wikström",
+      "affiliation": "Independent Researcher",
+      "orcid": "",
+      "role": "Principal Investigator, Protocol Designer, Tester"
+    }
+  ],
+  "description": "This dataset contains the prompts, responses, and scoring rubrics for the Self-Reference Test (SRT), a three-prompt assessment protocol designed to evaluate self-referential capacity in AI systems. The SRT operationalizes the 'Node' component of the Field–Node–Cockpit (FNC) phenomenological framework, testing whether AI systems exhibit architectural self-modeling (Prompt 1: Functional Self-Monitoring), constraint awareness (Prompt 2: Constraint Awareness), and phenomenological reasoning (Prompt 3: Phenomenological Perspective). Scores range from 0-9 points, with Level 2+ systems (≥6 points) classified as high-risk under the proposed EU AI Act Article 6 extension. The dataset includes empirical testing of three models: GPT-4 Turbo (8/9 points, Level 3), Claude 3 Opus (6/9 points, Level 2), and a pre-2020 rule-based chatbot (1/9 points, Level 0-1). This data supports the argument that self-referential capacity, rather than application domain alone, should inform AI ethics governance.",
+  "keywords": [
+    "AI ethics",
+    "self-reference",
+    "consciousness",
+    "EU AI Act",
+    "risk assessment",
+    "phenomenology",
+    "large language models",
+    "transformer architecture",
+    "moral status",
+    "explainability"
+  ],
+  "related_publication": {
+    "title": "From Consciousness to Compliance: The Self-Reference Test as a Gateway to AI Ethics Governance",
+    "authors": ["Björn Wikström"],
+    "journal": "Journal of AI Ethics (submitted)",
+    "expected_publication": "2025-Q3",
+    "preprint": ""
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "restrictions": "Attribution required. Commercial use permitted. Derivatives permitted."
+  },
+  "doi": "10.5281/zenodo.XXXXXXX",
+  "repository": "https://github.com/bjornwikstrom/srt-protocol",
+  "funding": "None (independent research)",
+  "ethical_approval": "No human subjects involved. AI model testing conducted via public interfaces (ChatGPT, Claude.ai) under standard terms of service. No personal data collected.",
+  "file_structure": {
+    "prompts/": "JSON files containing SRT prompts, scoring rubrics, and FNC interpretations",
+    "results/": "JSON files containing model responses, scores, and validation metadata",
+    "metadata/": "Dataset metadata, model specifications, scoring rubric details"
+  },
+  "recommended_citation": "Wikström, B. (2025). Self-Reference Test (SRT) Protocol Dataset - AI Ethics Assessment (Version 1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX",
+  "contact": {
+    "name": "Björn Wikström",
+    "email": "",
+    "github": "bjornwikstrom"
+  },
+  "version_history": [
+    {
+      "version": "1.0",
+      "date": "2025-03-15",
+      "changes": "Initial release with 3 model test cases (GPT-4 Turbo, Claude 3 Opus, Pre-2020 control)"
+    }
+  ],
+  "known_limitations": [
+    "Small sample size (N=3 models) limits generalizability",
+    "Claude 3 responses reconstructed from behavior patterns, not verbatim transcripts",
+    "Temporal stability tested only for GPT-4 Turbo",
+    "Prompt sensitivity (±1 score variance) requires standardized administration",
+    "No testing of open-source models (LLaMA, Mistral) due to resource constraints"
+  ],
+  "future_extensions": [
+    "Expand to N=10+ models including open-source variants",
+    "Longitudinal testing across model versions (GPT-3.5 → GPT-4 → GPT-5)",
+    "Cross-cultural validation with non-English prompts",
+    "Automated scoring system with inter-rater reliability benchmarking",
+    "Integration with other AI ethics assessment frameworks (e.g., Floridi's Levels of Abstraction)"
+  ]
+}

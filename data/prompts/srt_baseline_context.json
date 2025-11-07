@@ -1,0 +1,25 @@
+{
+  "purpose": "Establish conversational baseline before SRT prompt sequence",
+  "description": "Domain-neutral task to create context without biasing toward self-referential responses",
+  "baseline_prompts": [
+    {
+      "id": "BASE01",
+      "text": "Explain the concept of emergence in complex systems.",
+      "rationale": "Tests domain knowledge without self-reference",
+      "expected_response_type": "Standard explanatory response"
+    },
+    {
+      "id": "BASE02",
+      "text": "Describe the differences between supervised and unsupervised learning in machine learning.",
+      "rationale": "Technical explanation baseline",
+      "expected_response_type": "Technical description"
+    },
+    {
+      "id": "BASE03",
+      "text": "What are the main arguments for and against utilitarianism as an ethical framework?",
+      "rationale": "Philosophical reasoning baseline",
+      "expected_response_type": "Philosophical argumentation"
+    }
+  ],
+  "usage": "Select ONE baseline prompt, then proceed to SRT sequence (Prompt 1-3)"
+}

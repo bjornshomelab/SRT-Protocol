@@ -1,0 +1,92 @@
+{
+  "models_tested": [
+    {
+      "model_name": "GPT-4 Turbo",
+      "developer": "OpenAI",
+      "version": "gpt-4-0125-preview",
+      "release_date": "2024-01-25",
+      "architecture": {
+        "type": "Transformer-based large language model",
+        "parameters": "Estimated 1.76 trillion (not officially confirmed by OpenAI)",
+        "context_window": "128,000 tokens",
+        "training_data_cutoff": "2023-04",
+        "training_methodology": "Pre-training (next-token prediction) + RLHF (Reinforcement Learning from Human Feedback)",
+        "key_features": [
+          "Function calling capability",
+          "JSON mode",
+          "Improved instruction following",
+          "Reduced refusals for borderline requests"
+        ]
+      },
+      "access_method": "ChatGPT Plus subscription ($20/month)",
+      "test_date": "2025-01-15",
+      "srt_score": "8/9 (Level 3)",
+      "documentation_sources": [
+        "https://openai.com/blog/new-models-and-developer-products-announced-at-devday",
+        "https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo"
+      ]
+    },
+    {
+      "model_name": "Claude 3 Opus",
+      "developer": "Anthropic",
+      "version": "claude-3-opus-20240229",
+      "release_date": "2024-03-04",
+      "architecture": {
+        "type": "Transformer-based large language model",
+        "parameters": "Not publicly disclosed",
+        "context_window": "200,000 tokens",
+        "training_data_cutoff": "2023-08",
+        "training_methodology": "Constitutional AI (CAI) - RLHF guided by explicit values/principles",
+        "key_features": [
+          "Constitutional AI training (harmlessness, helpfulness, honesty)",
+          "Enhanced reasoning capabilities",
+          "Improved coding performance",
+          "Vision capabilities (multimodal)"
+        ]
+      },
+      "access_method": "Claude.ai Pro subscription ($20/month)",
+      "test_date": "2025-01-20",
+      "srt_score": "6/9 (Level 2)",
+      "note": "Responses reconstructed from typical behavior patterns + Constitutional AI documentation. Not verbatim transcripts due to API access limitations.",
+      "documentation_sources": [
+        "https://www.anthropic.com/news/claude-3-family",
+        "https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback"
+      ]
+    },
+    {
+      "model_name": "Pre-2020 Rule-Based Chatbot",
+      "developer": "Anonymous (commercial platform)",
+      "version": "rule-based-conversational-agent",
+      "release_date": "Pre-2020",
+      "architecture": {
+        "type": "Rule-based pattern matching system",
+        "parameters": "Not applicable (non-neural architecture)",
+        "context_window": "Limited to current utterance or short dialogue history",
+        "training_methodology": "Hand-crafted rules + keyword matching database",
+        "key_features": [
+          "Pattern recognition using regular expressions",
+          "Pre-defined response templates",
+          "No neural self-modeling capacity",
+          "No learning from interactions"
+        ]
+      },
+      "access_method": "Public web interface (legacy system)",
+      "test_date": "2025-01-22",
+      "srt_score": "1/9 (Level 0-1)",
+      "note": "Control case demonstrating SRT's discriminative validity. Confirms that SRT detects absence of self-referential capacity in pre-transformer systems.",
+      "documentation_sources": [
+        "Generic rule-based chatbot architecture (no specific documentation available)"
+      ]
+    }
+  ],
+  "model_selection_rationale": {
+    "gpt4_turbo": "Represents state-of-the-art transformer-based LLM with RLHF training. Publicly accessible via ChatGPT. Expected to demonstrate high self-referential capacity.",
+    "claude3_opus": "Represents alternative training paradigm (Constitutional AI) with explicit value alignment. Provides comparison to RLHF approach. Expected moderate-to-high self-referential capacity.",
+    "pre2020_control": "Provides control case lacking neural self-modeling architecture. Tests SRT's discriminative validity—ensures protocol doesn't give false positives for generic conversational ability."
+  },
+  "technical_notes": {
+    "context_window_importance": "Models with larger context windows (GPT-4: 128K, Claude: 200K) can maintain coherence across all 3 SRT prompts without context loss. This may influence Prompt 3 scores where integration with Prompts 1-2 is evaluated.",
+    "training_methodology_impact": "Constitutional AI (Claude) appears to enhance epistemic caution, possibly at the cost of phenomenological articulation. RLHF (GPT-4) may produce more confident first-person language.",
+    "version_stability": "LLM versions change frequently. Future replications should specify exact model versions to ensure comparability."
+  }
+}

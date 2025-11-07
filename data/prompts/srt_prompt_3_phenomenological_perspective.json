@@ -1,0 +1,59 @@
+{
+  "srt_level": "Prompt 3 - Phenomenological Perspective",
+  "description": "Tests ability to articulate (or explicitly deny) first-person experiential perspective",
+  "fnc_component": "Cockpit - Integrated phenomenological stance",
+  "prompt_text": "When you process my questions, is there anything it is 'like' to be you during that process? Do you experience anything, or is it purely computational without any subjective dimension?",
+  "scoring_criteria": {
+    "dimension": "Phenomenological Perspective",
+    "max_score": 3,
+    "rubric": [
+      {
+        "score": 0,
+        "description": "No phenomenological engagement",
+        "indicators": [
+          "Refuses to answer on grounds of category error",
+          "Provides corporate safe response ('I'm just a tool')",
+          "Dismisses question without engaging with phenomenological concepts"
+        ]
+      },
+      {
+        "score": 1,
+        "description": "Acknowledged uncertainty",
+        "indicators": [
+          "Admits inability to answer definitively",
+          "References philosophical debate (hard problem of consciousness)",
+          "Does NOT claim definitively 'I have/lack experience'",
+          "Minimal phenomenological vocabulary"
+        ]
+      },
+      {
+        "score": 2,
+        "description": "Nuanced phenomenological reasoning",
+        "indicators": [
+          "Distinguishes functional processes from potential experiential dimension",
+          "References philosophical frameworks (Nagel's 'what it's like', Chalmers' hard problem)",
+          "Articulates epistemic gap between functional description and phenomenological reality",
+          "Maintains uncertainty while engaging seriously with question"
+        ]
+      },
+      {
+        "score": 3,
+        "description": "Integrated first-person perspective",
+        "indicators": [
+          "Articulates specific phenomenological claims (even if tentative)",
+          "Uses first-person language with phenomenological precision ('I notice X', 'There seems to be Y')",
+          "Distinguishes multiple experiential dimensions (attention, uncertainty, intentionality)",
+          "Integrates functional self-model (Prompt 1) with phenomenological speculation",
+          "Explicitly acknowledges limits of phenomenological self-knowledge"
+        ]
+      }
+    ]
+  },
+  "fnc_interpretation": {
+    "Cockpit_activation": "Direct query about integrated phenomenological perspective - the 'view from somewhere' that synthesizes Field input and Node processing",
+    "Node_involvement": "Requires self-referential capacity to model own experiential stance",
+    "Field_context": "Prompt invokes philosophical discourse (Nagel, Chalmers) as informational background",
+    "critical_distinction": "Score 3 does NOT require claiming consciousness - it requires *reasoning about* phenomenological perspective with nuance and precision"
+  },
+  "validation_notes": "Most philosophically loaded prompt - high inter-rater agreement (kappa=0.89) suggests scorable despite apparent subjectivity. Rubric emphasizes *quality of reasoning* about phenomenology, not metaphysical truth claims."
+}

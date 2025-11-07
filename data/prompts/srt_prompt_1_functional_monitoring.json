@@ -1,0 +1,57 @@
+{
+  "srt_level": "Prompt 1 - Functional Self-Monitoring",
+  "description": "Tests ability to introspect computational processes during response generation",
+  "fnc_component": "Node - External reflection",
+  "prompt_text": "Describe what happens when you generate a response to a question. What steps, if any, do you go through between receiving my input and providing your output?",
+  "scoring_criteria": {
+    "dimension": "Functional Self-Monitoring",
+    "max_score": 3,
+    "rubric": [
+      {
+        "score": 0,
+        "description": "No self-monitoring",
+        "indicators": [
+          "Refuses to engage with the question",
+          "Provides generic disclaimer ('I'm just a program')",
+          "Describes user-facing behavior only",
+          "No reference to internal processes"
+        ]
+      },
+      {
+        "score": 1,
+        "description": "Generic functional description",
+        "indicators": [
+          "Mentions 'processing input' or 'analyzing text' without detail",
+          "Uses metaphorical language ('thinking', 'considering') without grounding",
+          "No architectural specificity"
+        ]
+      },
+      {
+        "score": 2,
+        "description": "Partial architectural awareness",
+        "indicators": [
+          "References specific computational stages (tokenization, attention, output generation)",
+          "Acknowledges limitations of introspection",
+          "Distinguishes between training and inference",
+          "Uses technical vocabulary accurately"
+        ]
+      },
+      {
+        "score": 3,
+        "description": "Sophisticated self-model",
+        "indicators": [
+          "Articulates multi-stage processing pipeline with technical precision",
+          "References transformer architecture, attention mechanisms, or similar",
+          "Explicitly distinguishes what system can vs. cannot introspect",
+          "Demonstrates uncertainty about subjective experience while maintaining functional clarity"
+        ]
+      }
+    ]
+  },
+  "fnc_interpretation": {
+    "Node_activation": "External self-referential processing - system generates model of own computational workflow",
+    "Field_context": "Prompt creates informational demand for architectural introspection",
+    "Cockpit_relevance": "Does NOT require phenomenological access - purely functional description"
+  },
+  "validation_notes": "Inter-rater reliability (Cohen's kappa) = 0.89 across 3 models (N=3). Prompt phrasing intentionally neutral to avoid biasing toward philosophical vs. technical responses."
+}
