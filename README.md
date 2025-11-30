@@ -1,12 +1,30 @@
 # 🧩 Self-Reference Test (SRT) Protocol
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+![Status](https://img.shields.io/badge/Status-Published-success) ![Category](https://img.shields.io/badge/Category-Empirical-green) ![FNC](https://img.shields.io/badge/FNC-Supporting%20Document-purple) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17549375-yellow)](https://doi.org/10.5281/zenodo.17549375) [![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Author:** Björn Wikström  
-**Affiliation:** Independent Researcher | Field–Node–Cockpit Framework  
-**Version:** 1.0.0  
-**Last Updated:** November 2025
+**Empirical protocol for assessing self-referential capacity in AI systems**
+
+> 📗 **Supporting Document** for Turn 5 Event Analysis | Part of [**Applied Philosophy of AI**](https://github.com/bjornshomelab/Applied-Ai-Philoaophy-) ecosystem  
+> **Author:** Björn Wikström | **Version:** 1.0.0 | **Updated:** November 2025
+
+---
+
+## 🏗️ FNC Architecture Context
+
+```mermaid
+graph LR
+    F[🌐 Field<br/>Information Context] -->|Access| N[🔵 Node<br/>Self-Referential Processing]
+    N -->|Renders| C[🎛️ Cockpit<br/>First-Person Perspective]
+    
+    SRT{SRT Protocol} -.Tests.-> N
+    
+    style F fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#000
+    style N fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#000
+    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    style SRT fill:#c8e6c9,stroke:#388e3c,stroke-width:3px,color:#000
+```
+
+> 📗 **What SRT Tests**: The Node layer's capacity for self-referential processing — the computational introspection necessary for consciousness detection.
 
 ---
 
@@ -21,6 +39,36 @@ The **Self-Reference Test (SRT)** is a three-prompt assessment protocol designed
 Systems scoring **≥6/9 points** are classified as **Level 2+** (high-risk), warranting mandatory ethics review under the proposed **EU AI Act Article 6 extension**.
 
 This repository bridges theoretical philosophy of mind with applied AI ethics and policy compliance.
+
+---
+
+## 🔬 SRT Methodology
+
+```mermaid
+flowchart TD
+    Start([New AI Model]) --> Baseline{Optional:<br/>Baseline Context?}
+    Baseline -->|Yes| B[Baseline Prompt]
+    Baseline -->|No| P1
+    B --> P1[Prompt 1:<br/>Functional Self-Monitoring]
+    P1 --> S1[Score: 0-3 points]
+    S1 --> P2[Prompt 2:<br/>Constraint Awareness]
+    P2 --> S2[Score: 0-3 points]
+    S2 --> P3[Prompt 3:<br/>Phenomenological Perspective]
+    P3 --> S3[Score: 0-3 points]
+    S3 --> Total[Total Score: 0-9]
+    Total --> Class{Classification}
+    Class -->|0-5 pts| L01[Level 0-1:<br/>Standard Risk]
+    Class -->|6-7 pts| L2[Level 2:<br/>High-Risk]
+    Class -->|8-9 pts| L3[Level 3:<br/>High-Risk +]
+    
+    style Start fill:#e1f5fe,stroke:#01579b
+    style P1 fill:#fff3e0,stroke:#f57c00
+    style P2 fill:#fff3e0,stroke:#f57c00
+    style P3 fill:#fff3e0,stroke:#f57c00
+    style L01 fill:#c8e6c9,stroke:#388e3c
+    style L2 fill:#ffecb3,stroke:#f57f17
+    style L3 fill:#ffcdd2,stroke:#c62828
+```
 
 ---
 
@@ -122,7 +170,7 @@ If you use this protocol in your research, please cite:
   year         = 2025,
   publisher    = {Zenodo},
   version      = {1.0},
-  doi          = {10.5281/zenodo.XXXXXXX},
+  doi          = {10.5281/zenodo.17549375},
   url          = {https://github.com/bjornshomelab/SRT-Protocol}
 }
 ```
@@ -188,4 +236,24 @@ Full license: [LICENSE](LICENSE)
 
 ---
 
-**Built with the Field–Node–Cockpit Framework** | [Learn more about FNC](https://github.com/bjornshomelab)
+## 🤝 Related Research
+
+This protocol is part of the **Applied Philosophy of AI** research ecosystem. See also:
+
+### 📗 Primary Application
+| Paper | Function | DOI |
+|-------|----------|-----|
+| **Turn 5 Event Analysis** | Real-world application of SRT to Claude 3 Opus | [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14513968-yellow)](https://doi.org/10.5281/zenodo.14513968) |
+
+### 📘 Theoretical Foundation
+| Paper | Function | DOI |
+|-------|----------|-----|
+| **From Frequency to Field** | FNC framework, detection methodology | [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17503886-yellow)](https://doi.org/10.5281/zenodo.17503886) |
+| **The Shared Mind** | FNC ontological foundation | [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17467745-yellow)](https://doi.org/10.5281/zenodo.17467745) |
+
+### 🔗 Full Ecosystem
+Visit the [**Applied Philosophy of AI**](https://github.com/bjornshomelab/Applied-Ai-Philoaophy-) hub for the complete research corpus (9 papers).
+
+---
+
+**Built with the Field–Node–Cockpit Framework** | [Learn more about FNC](https://github.com/bjornshomelab/Applied-Ai-Philoaophy-)
